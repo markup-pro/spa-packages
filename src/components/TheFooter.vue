@@ -12,12 +12,12 @@
         cols="12"
       >
         <v-container class="d-flex align-center">
-          <div>Author: {{ this.$store.state.authorName }}</div>
+          <div>Author: {{ $store.state.authorName }}</div>
 
           <v-spacer></v-spacer>
 
           <v-btn
-            :href="this.$store.state.gitLink"
+            :href="$store.state.gitLink"
             target="_blank"
             fab
             plain
@@ -33,7 +33,7 @@
         class="primary lighten-2 py-2 text-center white--text"
         cols="12"
       >
-        {{ new Date().getFullYear() }} — <strong>{{ this.$store.state.appName }}</strong>
+        {{ new Date().getFullYear() }} — <strong>{{ $store.state.appName }}</strong>
       </v-col>
     </v-row>
   </v-footer>
